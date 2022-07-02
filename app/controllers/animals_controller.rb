@@ -35,4 +35,19 @@ class AnimalsController < ApplicationController
         message: "This animal has been updated successfully."
       }
     end
+  end
+
+  def destroy
+    @animal = Animal.find(params[:id])
+    if @animal.destroy
+      render status: 200, json: {
+      message: "This animal has been deleted successfully."
+      }
+    end
+  end
+  
+  private
+  def animal_params
+    params.permit(:name, :sex, :breed, :age)
+  end
 end
