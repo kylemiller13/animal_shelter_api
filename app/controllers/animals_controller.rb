@@ -28,4 +28,11 @@ class AnimalsController < ApplicationController
     json_response(@animal, :created)
   end
 
+  def update
+    @animal = Animal.find(params[:id])
+    if @animal.update!(animal_params)
+      render status: 200, json: {
+        message: "This animal has been updated successfully."
+      }
+    end
 end
