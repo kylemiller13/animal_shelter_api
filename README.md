@@ -15,7 +15,7 @@
 * Factory Bot
 
 ## Description:
-_This project was created to demonstrate my understanding of how to create an API for a local animal shelter. This API that allows users to retrieve information about animals in a shelter including name, sex, breed, age. The user can add/remove/edit/search animals in the database._
+_This project was created to demonstrate my understanding of how to create an API for a local animal shelter. This API allows users to retrieve information about animals in a shelter including name, sex, breed, & age. The user can add/remove/edit/search animals in the database._
 
 ## Setup/Installation Requirements for Windows
 
